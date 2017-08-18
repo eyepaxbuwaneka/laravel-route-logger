@@ -10,6 +10,8 @@ use Log;
 
 class RequestResponseLogger
 {
+    private $start = 0;
+    private $end = 0;
     /**
      * Handle an incoming request.
      *
@@ -19,11 +21,15 @@ class RequestResponseLogger
      */
     public function handle($request, Closure $next)
     {
+        $this->start = microtime(true);
+
         return $next($request);
     }
 
     public function terminate($request, $response)
     {
+        $this->end = microtime(true);
+
         $this->log($request);
     }
 
@@ -42,7 +48,6 @@ class RequestResponseLogger
                 ["ip" => $ip, "url" => $url, "user_agent" => $agentSerialized, "method" => $method, "query_values" => serialize($query), "created_at" => $time, "updated_at" => $time]
             );
         }
-
     }
 
 }
