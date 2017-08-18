@@ -48,6 +48,8 @@ class RequestResponseLogger
                 ["ip" => $ip, "url" => $url, "user_agent" => $agentSerialized, "method" => $method, "query_values" => serialize($query), "created_at" => $time, "updated_at" => $time]
             );
         }
+
+
     }
 
 }

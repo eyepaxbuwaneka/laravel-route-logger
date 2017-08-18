@@ -1,5 +1,5 @@
 {
-    "name": "eyepax-it/route-logger",
+    "name": "eyepax/route-logger",
     "description": "This package will log all your routes/ http requests",
     "type": "library",
     "authors": [
@@ -8,5 +8,10 @@
             "email": "buwaneka.kalansuriya@eyepax.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Eyepax\\RouteLogger\\": "src"
+        }
+    }
 }

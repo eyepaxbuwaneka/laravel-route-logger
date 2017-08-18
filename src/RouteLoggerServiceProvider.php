@@ -23,6 +23,6 @@ class RouteLoggerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['router']->middleware('RouteLoggerServiceProvider', \Eyepax\RouteLogger\RouteLoggerServiceProvider::class);
+        $this->app['router']->middleware('RouteLoggerServiceProvider', \Eyepax\RouteLogger\RequestResponseLogger::class);
     }
 }
