@@ -1,0 +1,12 @@
+{
+    "name": "eyepax/route-logger",
+    "description": "This package will log all your routes/ http requests",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Buwaneka Kalansuriya",
+            "email": "buwaneka.kalansuriya@eyepax.com"
+        }
+    ],
+    "require": {}
+}
