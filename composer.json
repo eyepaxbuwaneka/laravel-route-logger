@@ -1,5 +1,5 @@
 {
-    "name": "eyepax/route-logger",
+    "name": "eyepax-it/route-logger",
     "description": "This package will log all your routes/ http requests",
     "type": "library",
     "authors": [
