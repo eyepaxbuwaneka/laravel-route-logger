@@ -1,17 +1,21 @@
 {
-    "name": "eyepax/route-logger",
-    "description": "This package will log all your routes/ http requests",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Buwaneka Kalansuriya",
-            "email": "buwaneka.kalansuriya@eyepax.com"
-        }
-    ],
-    "require": {},
+  "name": "eyepax/route-logger",
+  "description": "This package will log all your routes/ http requests",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Buwaneka Kalansuriya",
+      "email": "buwaneka.kalansuriya@eyepax.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.4"
+  },
     "autoload": {
         "psr-4": {
             "Eyepax\\RouteLogger\\": "src"
         }
     }
+
 }
